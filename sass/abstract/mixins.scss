@@ -1,0 +1,13 @@
+@mixin button ($color-background, $color-text,$text-size,$border-radius-size) {
+    padding: 2%;
+    border: none;
+    background-color: $color-background !important;
+    color: $color-text !important;
+    font-size: $text-size !important;
+    border-radius: $border-radius-size !important;
+}
+@mixin  texts ($text-size) {
+    color: $color-white;
+    font-size: $text-size;
+    font-family: $text-menu;
+}

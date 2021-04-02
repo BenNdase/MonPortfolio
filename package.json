@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "compile:sass":"sass sass/main.scss style/style.css --watch",
+        "compile:json":"json-server myDatabase.json --watch"
+    }
+}
