@@ -6,8 +6,25 @@
     font-size: $text-size !important;
     border-radius: $border-radius-size !important;
 }
-@mixin  texts ($text-size) {
-    color: $color-white;
-    font-size: $text-size;
-    font-family: $text-menu;
+@mixin  texts ($color,$texts-size,$font-family) {
+    color: $color;
+    font-size: $texts-size !important;
+    font-family: $font-family;
+}
+@mixin flex($display,$direction,$wrap,$justify-content) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+}
+@mixin font-size($size) {
+    font-size: $size;
+}
+@mixin background($height){
+    background-image: linear-gradient(to right bottom, $color-background-transparent, $color-background), url("../../img/headerimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: $height;
 }

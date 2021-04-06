@@ -1,40 +1,120 @@
-.presentation {
-    background-image: linear-gradient(to right bottom, $color-background-transparent, $color-background), url("../../img/headerimg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
+hr {
+    width: 1px;
+    height: 100%;
+}
 
-    &__texts {
+.about {
+    background-color: $color-hover;
+    height: 80vh;
+
+    &__title {
+        padding-top: 5rem;
+        font-size: 3rem;
         text-align: center;
-        position: relative;
-        margin: 0 auto;
-        width: 40vw;
-        padding: 2%;
-        margin-bottom: 4%;
-
-        &__fullname{
-            color: $color-hover;
-                font-family: $text-menu;
-                font-weight: 700;
-                font-size: 3rem;
-        }
-
-        &__description {
-            @include texts(1.6rem);
-        }
     }
 
-    @media screen and (max-width: 630px) {
-        & {
-            height: 80vh;
+    &__description {
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        @include texts($color-background, 1.6rem, $text-menu);
+    }
 
-            &__texts {
-                width: 80vw;
+    &__content {
+        position: relative;
+        width: 90vw;
+        background-color: $color-white;
+        border: 1px solid $color-hover;
+        margin: 6rem auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+
+        .frontend , .backend , .database {
+            width: 30vw;
+            text-align: center;
+            padding-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto;
+
+            &__title{
+                color: $color-icons;
+            }
+
+            & .fas {
+                padding-bottom: 1rem;
+                font-size: 4rem;
+            }
+
+            &__description {
+                font-size: 1.5rem;
+                // font-weight: normal;
+            }
+            &__icons{
+                .languages, .frameworks{
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                }
+                .languages img, .frameworks img{
+                    width: 6.5rem
+                }
+            }
+        }
+
+        // .backend {
+        //     @extend .frontend;
+
+        //     &__title{
+        //         color: $color-icons;
+        //     }
+
+        //     & .fas {
+        //         @extend .fas;
+        //     }
+
+        //     &__description {
+        //         font-size: 1.5rem;
+        //         // font-weight: normal;
+        //     }
+        // }
+        // .database {
+        //     @extend .frontend;
+
+        //     &__title{
+        //         color: $color-icons;
+        //     }
+
+        //     & .fas {
+        //         @extend .fas;
+        //     }
+
+        //     &__description {
+        //         font-size: 1.5rem;
+        //         // font-weight: normal;
+        //     }
+        // }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about {
+        height: 90vh;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            
+            .frontend, .backend, .database{
+                width: 80%;
             }
         }
     }
+}
+
+.projects {
+    background-color: $color-white;
+    height: 80vh;
 }
