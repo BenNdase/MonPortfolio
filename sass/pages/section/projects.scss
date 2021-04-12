@@ -1,0 +1,61 @@
+.projects {
+    background-color: $color-white;
+    height: 80vh;
+    margin-top: 40rem;
+
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        color: $color-icons;
+    }
+    &__content{
+        width: 90vw;
+        margin: 6rem auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card{
+            width: 29vw;
+            height: 40vh;
+            box-shadow: 0 18px 26px 0 rgba(0,0,0,0.2);
+            cursor: pointer;
+            margin-bottom: 3rem;
+            &__image{
+                width: 100%;
+                height: 40vh;
+            }
+            &__content{
+                text-align: center;
+                word-spacing: 0.3rem;
+                padding: 1rem;
+                margin-top: -40%;
+                z-index: 5;
+                display: none;
+            }
+            &__title{
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .projects{
+        margin-top: 95rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .projects{
+        margin-top: 55rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .projects{
+        margin-top: 95rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .projects{
+        margin-top: 130rem;
+    }
+}

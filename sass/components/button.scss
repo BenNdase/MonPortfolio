@@ -1,3 +1,24 @@
 .button--blue{
-    @include button($color-hover, $color-background, 1.6rem,1.6rem)
+    @include button($color-icons, $color-white, 1.6rem,1.6rem)
+}
+.btn{
+    &--white{
+        @include btn($color-white,$color-icons);
+
+        &:hover{
+            @include btn-hover($color-icons, $color-white);
+        }
+    }
+    &--blue{
+        @include btn($color-icons,$color-white);
+    }
+    &--left{
+        padding: 0.7rem;
+        width: 50%;
+        margin: 1rem 0 0 -0.2rem;
+
+        &:hover{
+            @include btn-hover($color-white, $color-icons);
+        }
+    }
 }

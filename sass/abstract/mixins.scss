@@ -5,6 +5,26 @@
     color: $color-text !important;
     font-size: $text-size !important;
     border-radius: $border-radius-size !important;
+    margin: 0 auto;
+}
+@mixin btn($btn-color-background,$btn-color-text) {
+    border: 2px solid $color-icons;
+    background-color: $btn-color-background;
+    color: $btn-color-text;
+    padding: 0.6%;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-family: $text-menu;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+}
+@mixin btn-hover($btn-color-background,$btn-color-text) {
+    background-color: $btn-color-background;
+    color: $btn-color-text;
 }
 @mixin  texts ($color,$texts-size,$font-family) {
     color: $color;
@@ -20,8 +40,8 @@
 @mixin font-size($size) {
     font-size: $size;
 }
-@mixin background($height){
-    background-image: linear-gradient(to right bottom, $color-background-transparent, $color-background), url("../../img/headerimg.jpg");
+@mixin background($background-right,$background-bottom,$height){
+    background-image: linear-gradient(to right bottom, $background-right, $background-bottom), url("../../img/headerimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

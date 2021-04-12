@@ -1,0 +1,80 @@
+.contact{
+    @include background($color-background-footer,$color-background-footer,93vh);
+    background-color: $color-background-footer;
+    margin-top: 30rem;
+
+    &__title{
+        padding-top: 5rem;
+        font-size: 3rem;
+        text-align: center;
+        color: $color-white;
+    }
+    &__content{
+        width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .form{
+            width: 30vw;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+
+            &__label{
+                @include texts($color-white, 1.7rem, $text-menu);
+                padding-bottom: 0.5rem;
+            }
+            &__input, &__textarea{
+                padding: 1rem;
+                border: none;
+                outline-style: none;
+                border-radius: 0.4rem;
+                color: $color-background;
+                font-family: $text-menu;
+                font-size: 1.5rem;
+                resize: none;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .link{
+            width: 32vw;
+            padding: 4rem;  
+
+            &__description{
+                font-size: 1.6rem;
+                color: $color-white;
+                font-weight: bold;
+                font-family: $text-menu;
+                text-align: justify;
+                margin-bottom: 1rem;
+            }
+
+            &__icons-box{
+                display: flex;
+                flex-direction: column;
+            }
+            &__icon{
+                font-size: 1.6rem;
+                color: $color-white;
+                font-weight: bold;
+                font-family: $text-menu;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+
+
+                & a {
+                    font-size: 3.6rem;
+                    color: $color-icons;
+
+                    &:hover{
+                        color: $color-white;
+                    }
+                }
+                & span{
+                    padding-left: 0.8rem;
+                }
+            }
+        }
+    }
+}

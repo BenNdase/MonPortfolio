@@ -1,5 +1,46 @@
-{
+{ 
     "fullname" : [
-        {"id":"1","nom":"Tondase", "postnom":"Bayinga", "prenom":"Benjamin"}
-    ]        
+        {"id":"1","firstname":"Tondase", "lastname":"Benjamin"}
+    ],
+    "contact" : [
+        {"id":"1", "name":"github.com/BenNdase", "link":"https://github.com/BenNdase", "class":"fab fa-github"},
+        {"id":"2", "name":"benjamin1tondase211@gmail.com", "link":"mailto:benjamin1tondase211@gmail.com","class":"fas fa-envelope"},
+        {"id":"3", "name":"+243892632611", "link":"tel:+243892632611","class":"fas fa-phone-square-alt"},
+        {"id":"3", "name":"1 Limete, Lemba, Kinshasa", "link":"#","class":"fas fa-map-marker-alt"}
+    ],
+    "skills":[
+        {
+            "id":"1",
+            "title":"Langages",
+            "frontend_languages" : [
+                {"id":"1" , "name":"JavaScript", "image__src":"https://img.icons8.com/color/96/000000/javascript.png"},
+                {"id":"2" , "name":"Sass", "image__src":"https://img.icons8.com/color/96/000000/sass.png"},
+                {"id":"3" , "name":"HTML5", "image__src":"https://img.icons8.com/color/96/000000/html-5--v1.png"},
+                {"id":"4" , "name":"CSS3", "image__src":"https://img.icons8.com/color/96/000000/css3.png"},
+                {"id":"5" , "name":"JavaScript", "image__src":"https://img.icons8.com/nolan/96/java-coffee-cup-logo.png"}
+            ],
+            "frontend_frameworks" : [
+                {"id":"1", "name":"VueJs", "image__src":"https://img.icons8.com/color/96/000000/vue-js.png"},
+                {"id":"2", "name":"Jquery", "image__src":"https://img.icons8.com/ios-filled/100/000000/jquery.png"},
+                {"id":"3", "name":"Boostrap", "image__src":"https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png"},
+                {"id":"4", "name":"Semantic", "image__src":"https://semantic-ui.com/images/logo.png"}
+            ],
+            "backend_tools" : [
+                {"id":"1", "name":"Node Js", "image__src":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"}
+            ],
+            "DBMS" : [
+                {"id":"1", "name":"Sql Server", "image__src":"https://img.icons8.com/color/96/000000/microsoft-sql-server.png"},
+                {"id":"2", "name":"MongoDB", "image__src":"https://img.icons8.com/color/96/000000/mongodb.png"},
+                {"id":"3", "name":"MySQL", "image__src":"https://img.icons8.com/fluent/96/000000/mysql-logo.png"}
+            ]
+        }
+    ],
+    "projects" : [
+        {"id":"1", "name":"Kinshasa Digital Academy", "image__src":"./img/projects/Kda.jpg"},
+        {"id":"2", "name":"Infraction Routière", "image__src":"./img/projects/infractionroutiere.jpg"},
+        {"id":"3", "name":"Formulaire Atelier KDA", "image__src":"./img/projects/projets.jpg"},
+        {"id":"4", "name":"The Sleep App", "image__src":"./img/projects/imageproject.png"},
+        {"id":"5", "name":"Design", "image__src":"./img/projects/design.png"},
+        {"id":"6", "name":"Mobile Project", "image__src":"./img/projects/Mobile.jpeg"}
+    ]
 }

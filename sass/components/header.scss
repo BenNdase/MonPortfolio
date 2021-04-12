@@ -1,33 +1,96 @@
 .header {
-    @include background(90vh);
-    display: flex;
-    align-items: center;
+    @include background($color-background-transparent,$color-background,100vh);
+    
 
     &__content {
         text-align: center;
         position: relative;
+        top: 50%;
+        transform: translateY(-43%);
         margin: 0 auto;
-        width: 60vw;
+        width: 90vw;
         padding: 2%;
-        margin-bottom: 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
     &__title {
         color: $color-hover;
         font-family: $text-menu;
-        font-weight: 700;
-        font-size: 4rem;
+        font-weight: bold;
+        font-size: 6rem;
     }
     &__description {
-        @include texts($color-white,1.6rem,$text-menu);
+        @include texts($color-white,2.5rem,$text-menu);
+        font-weight: bold;
+        height: 20%;
+        & p:nth-child(2){
+            margin-top: -6rem;
+        }
     }
-
-    @media screen and (max-width: 700px) {
+    
+    &__illustration{
+        width: 45vw;
+    }
+    @media screen and (max-width: 900px) {
         & {
-            height: 90vh;
+            height: 100vh;
             background-position: center;
 
             &__content {
                 width: 80vw;
+                height: 40vh;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        & {
+            &__content {
+                width: 90vw;
+                height: 45vh;
+            }
+            &__title {
+                font-size: 5.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 500px){
+        & {
+            &__content {
+                width: 96vw;
+                padding: 0.5rem;
+            }
+            &__title {
+                font-size: 4.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 450px){
+        & {
+            &__content {
+                width: 96vw;
+                height: 45vh;
+            }
+            &__title {
+                font-size: 4.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 400px){
+        & {
+            &__content {
+                height: 35vh;
+            }
+            &__title {
+                font-size: 4.3rem;
+                padding-bottom: 1.5rem;
             }
         }
     }
