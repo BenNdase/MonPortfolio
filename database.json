@@ -12,18 +12,15 @@
         {
             "id":"1",
             "title":"Langages",
-            "frontend_languages" : [
+            "frontend_tools" : [
                 {"id":"1" , "name":"JavaScript", "image__src":"https://img.icons8.com/color/96/000000/javascript.png"},
                 {"id":"2" , "name":"Sass", "image__src":"https://img.icons8.com/color/96/000000/sass.png"},
                 {"id":"3" , "name":"HTML5", "image__src":"https://img.icons8.com/color/96/000000/html-5--v1.png"},
                 {"id":"4" , "name":"CSS3", "image__src":"https://img.icons8.com/color/96/000000/css3.png"},
-                {"id":"5" , "name":"JavaScript", "image__src":"https://img.icons8.com/nolan/96/java-coffee-cup-logo.png"}
-            ],
-            "frontend_frameworks" : [
-                {"id":"1", "name":"VueJs", "image__src":"https://img.icons8.com/color/96/000000/vue-js.png"},
-                {"id":"2", "name":"Jquery", "image__src":"https://img.icons8.com/ios-filled/100/000000/jquery.png"},
-                {"id":"3", "name":"Boostrap", "image__src":"https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png"},
-                {"id":"4", "name":"Semantic", "image__src":"https://semantic-ui.com/images/logo.png"}
+                {"id":"5", "name":"VueJs", "image__src":"https://img.icons8.com/color/96/000000/vue-js.png"},
+                {"id":"6", "name":"Jquery", "image__src":"https://img.icons8.com/ios-filled/100/000000/jquery.png"},
+                {"id":"7", "name":"Boostrap", "image__src":"https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png"},
+                {"id":"8", "name":"Semantic", "image__src":"https://semantic-ui.com/images/logo.png"}
             ],
             "backend_tools" : [
                 {"id":"1", "name":"Node Js", "image__src":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"}

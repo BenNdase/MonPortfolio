@@ -48,15 +48,10 @@ window.onload = function () {
         })
         .then((data) => {
             for (let skill of data) {
-                for(let lang of skill.frontend_languages){
+                for(let lang of skill.frontend_tools){
                     const image = document.createElement("img");
                     image.setAttribute("src",`${lang.image__src}`);
                     languages.appendChild(image);
-                }
-                for(let lang of skill.frontend_frameworks){
-                    const image = document.createElement("img");
-                    image.setAttribute("src",`${lang.image__src}`);
-                    frameworks.appendChild(image);
                 }
                 for(let lang of skill.backend_tools){
                     const image = document.createElement("img");
