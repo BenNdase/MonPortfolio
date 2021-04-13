@@ -9,7 +9,7 @@ const projects = document.querySelector("#projects__content");
 const links_footer = document.querySelector("#link__icons-box");
 
 window.onload = function () {
-    fetch("http://localhost:3000/fullname")
+    fetch("https://607588f80baf7c0017fa663b.mockapi.io/fullname")
         .then(function (response) {
             return response.json();
         })
@@ -21,7 +21,7 @@ window.onload = function () {
                 fullname.prepend(paragraphe);
             }
         });
-    fetch("http://localhost:3000/contact")
+    fetch("https://607588f80baf7c0017fa663b.mockapi.io/contact")
         .then((response) => {
             return response.json();
         })
@@ -42,7 +42,7 @@ window.onload = function () {
                 links_footer.appendChild(link_icon);
             }
         });
-    fetch("http://localhost:3000/skills")
+    fetch("https://607588f80baf7c0017fa663b.mockapi.io/skills")
         .then((response) => {
             return response.json();
         })
@@ -66,7 +66,7 @@ window.onload = function () {
             }
         })
 
-    fetch("http://localhost:3000/projects")
+    fetch("https://607588f80baf7c0017fa663b.mockapi.io/projects")
         .then((response) => {
             return response.json();
         })
