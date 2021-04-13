@@ -40,7 +40,6 @@
             background-position: center;
 
             &__content {
-                width: 80vw;
                 height: 40vh;
                 margin: 0 auto;
                 display: flex;
@@ -53,7 +52,6 @@
     @media screen and (max-width: 700px){
         & {
             &__content {
-                width: 90vw;
                 height: 45vh;
             }
             &__title {
@@ -64,7 +62,6 @@
     @media screen and (max-width: 500px){
         & {
             &__content {
-                width: 96vw;
                 padding: 0.5rem;
             }
             &__title {
@@ -75,7 +72,6 @@
     @media screen and (max-width: 450px){
         & {
             &__content {
-                width: 96vw;
                 height: 45vh;
             }
             &__title {

@@ -9,7 +9,7 @@ const projects = document.querySelector("#projects__content");
 const links_footer = document.querySelector("#link__icons-box");
 
 window.onload = function () {
-    fetch("https://607588f80baf7c0017fa663b.mockapi.io/fullname")
+    fetch("https://607597500baf7c0017fa683c.mockapi.io/v1/fullname")
         .then(function (response) {
             return response.json();
         })
@@ -21,7 +21,7 @@ window.onload = function () {
                 fullname.prepend(paragraphe);
             }
         });
-    fetch("https://607588f80baf7c0017fa663b.mockapi.io/contact")
+    fetch("https://607597500baf7c0017fa683c.mockapi.io/v1/contact")
         .then((response) => {
             return response.json();
         })
@@ -42,18 +42,18 @@ window.onload = function () {
                 links_footer.appendChild(link_icon);
             }
         });
-    fetch("https://607588f80baf7c0017fa663b.mockapi.io/skills")
+    fetch("https://607597500baf7c0017fa683c.mockapi.io/v1/skills")
         .then((response) => {
             return response.json();
         })
         .then((data) => {
             for (let skill of data) {
-                for(let lang of skill.frontend_tools){
+                for(let lang of skill.frontend){
                     const image = document.createElement("img");
                     image.setAttribute("src",`${lang.image__src}`);
                     languages.appendChild(image);
                 }
-                for(let lang of skill.backend_tools){
+                for(let lang of skill.backend){
                     const image = document.createElement("img");
                     image.setAttribute("src",`${lang.image__src}`);
                     backend.appendChild(image);
@@ -66,7 +66,7 @@ window.onload = function () {
             }
         })
 
-    fetch("https://607588f80baf7c0017fa663b.mockapi.io/projects")
+    fetch("https://607597500baf7c0017fa683c.mockapi.io/v1/projects")
         .then((response) => {
             return response.json();
         })

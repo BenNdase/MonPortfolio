@@ -111,7 +111,6 @@ html {
     background-position: center;
   }
   .header__content {
-    width: 80vw;
     height: 40vh;
     margin: 0 auto;
     display: flex;
@@ -122,7 +121,6 @@ html {
 }
 @media screen and (max-width: 700px) {
   .header__content {
-    width: 90vw;
     height: 45vh;
   }
   .header__title {
@@ -131,7 +129,6 @@ html {
 }
 @media screen and (max-width: 500px) {
   .header__content {
-    width: 96vw;
     padding: 0.5rem;
   }
   .header__title {
@@ -140,7 +137,6 @@ html {
 }
 @media screen and (max-width: 450px) {
   .header__content {
-    width: 96vw;
     height: 45vh;
   }
   .header__title {
@@ -290,7 +286,6 @@ html {
 }
 .projects {
   background-color: white;
-  height: 80vh;
   margin-top: 40rem;
 }
 .projects__title {
@@ -353,6 +348,46 @@ html {
     margin-top: 110vh;
   }
 }
+@media screen and (max-width: 530px) {
+  .projects {
+    margin-top: 120vh;
+  }
+}
+@media screen and (max-width: 510px) {
+  .projects {
+    margin-top: 140vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projects {
+    margin-top: 110vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects {
+    margin-top: 180vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .projects {
+    margin-top: 125vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  .projects {
+    margin-top: 200vh;
+  }
+}
+@media screen and (max-width: 310px) {
+  .projects {
+    margin-top: 210vh;
+  }
+}
+@media screen and (max-width: 300px) {
+  .projects {
+    margin-top: 250vh;
+  }
+}
 .contact {
   background-image: linear-gradient(to right bottom, #333333f6, #333333f6), url("../../img/headerimg.jpg");
   background-repeat: no-repeat;
@@ -361,7 +396,7 @@ html {
   width: 100%;
   height: 93vh;
   background-color: #333333f6;
-  margin-top: 30rem;
+  margin-top: 10rem;
 }
 .contact__title {
   padding-top: 5rem;

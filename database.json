@@ -11,7 +11,6 @@
     "skills":[
         {
             "id":"1",
-            "title":"Langages",
             "frontend_tools" : [
                 {"id":"1" , "name":"JavaScript", "image__src":"https://img.icons8.com/color/96/000000/javascript.png"},
                 {"id":"2" , "name":"Sass", "image__src":"https://img.icons8.com/color/96/000000/sass.png"},
