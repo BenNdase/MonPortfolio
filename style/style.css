@@ -311,7 +311,7 @@ html {
 }
 .projects__content .card__image {
   width: 100%;
-  height: 30rem;
+  height: 40vh;
 }
 .projects__content .card__content {
   text-align: center;
