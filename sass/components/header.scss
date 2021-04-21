@@ -1,19 +1,11 @@
 .header {
-    @include background($color-background-transparent,$color-background,100vh);
-    
-
+    @include background($color-background-transparent,$color-background);
+    height: 100vh;
+    text-align: center;
     &__content {
-        text-align: center;
         position: relative;
         top: 50%;
         transform: translateY(-43%);
-        margin: 0 auto;
-        width: 90vw;
-        padding: 2%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
     }
     &__title {
         color: $color-hover;

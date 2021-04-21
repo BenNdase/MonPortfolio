@@ -40,11 +40,10 @@
 @mixin font-size($size) {
     font-size: $size;
 }
-@mixin background($background-right,$background-bottom,$height){
+@mixin background($background-right,$background-bottom){
     background-image: linear-gradient(to right bottom, $background-right, $background-bottom), url("../../img/headerimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: $height;
 }

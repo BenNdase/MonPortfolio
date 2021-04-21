@@ -24,4 +24,13 @@
             @include btn-hover($color-white, $color-icons);
         }
     }
+    &--header{
+        width: 15rem;
+        padding: 1rem;
+        margin: 4rem auto;
+
+        &:hover{
+            @include btn-hover($color-btn-transparent,$color-icons)
+        }
+    }
 }
